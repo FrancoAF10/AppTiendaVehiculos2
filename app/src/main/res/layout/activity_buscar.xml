@@ -6,16 +6,36 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
     tools:context=".Buscar">
 
     <TextView
+        android:textSize="20dp"
+        android:text="- Para Buscar es con campo MARCA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:textSize="20dp"
+        android:text="- Para Eliminar es con campo ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:textSize="20dp"
+        android:text="- Para Actualizar primero buscar la Marca, Luego cambiarlo por el ID la misma casilla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
         android:text="Buscar"
-        android:textSize="25dp"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <!--SUB LAYOUT -->
     <LinearLayout
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -23,7 +43,7 @@
         <EditText
             android:id="@+id/edtVehiculoBuscar"
             android:layout_weight="2"
-            android:hint="Id Vehiculo"
+            android:hint="Id/Marca Vehiculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button

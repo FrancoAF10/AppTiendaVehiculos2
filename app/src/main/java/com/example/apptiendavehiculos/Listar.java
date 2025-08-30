@@ -81,7 +81,7 @@ public class Listar extends AppCompatActivity {
 
             for(int i=0; i < jsonArray.length(); i++){
                 JSONObject jsonObject=jsonArray.getJSONObject(i);
-                listavehiculos.add(jsonObject.getString("marca")+" "+jsonObject.getString("modelo"));
+                listavehiculos.add("ID: "+jsonObject.getString("id")+" - "+jsonObject.getString("marca")+" - "+jsonObject.getString("modelo")+" - "+jsonObject.getString("color")+" - "+jsonObject.getString("precio")+" - "+jsonObject.getString("placa"));
             }
             //contexto
             adapter=new ArrayAdapter(this, android.R.layout.simple_list_item_1,listavehiculos);
