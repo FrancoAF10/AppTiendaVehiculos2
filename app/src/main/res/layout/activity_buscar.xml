@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buscar">
+
+    <TextView
+        android:text="Buscar"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--SUB LAYOUT -->
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtVehiculoBuscar"
+            android:layout_weight="2"
+            android:hint="Id Vehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/BtnBuscarVehiculo"
+            android:text="Buscar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <!--FIN LAYOUT -->
+    <EditText
+        android:id="@+id/edtMarcaVehiculo"
+        android:hint="Marca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/edtModeloVehiculo"
+        android:hint="Modelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/edtColorVehiculo"
+        android:hint="Color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/edtPrecioVehiculo"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/edtPlacaVehiculo"
+        android:hint="Placa"
+        android:maxLength="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+    <Button
+        android:id="@+id/BtnActualizarVehiculo"
+        android:layout_marginTop="20dp"
+        android:text="Actualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+    <Button
+        android:id="@+id/BtnEliminarVehiculo"
+        android:layout_marginTop="20dp"
+        android:text="Eliminar"
+        android:backgroundTint="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+
+</LinearLayout>
